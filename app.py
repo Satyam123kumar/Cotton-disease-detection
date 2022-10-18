@@ -30,6 +30,17 @@ loader = T.Compose([T.Resize(image_size),
     T.ToTensor(),T.Normalize(*stats)])
 dataset = ImageFolder(data_dir+'/train', transform=ToTensor())
 
+def func():
+    return 0
+
+def aman():
+    x = 5
+    y = 7
+    return x+y-0
+
+def subtract():
+    return 10-2
+
 class ImageClassificationBase(nn.Module):
     def training_step(self, batch):
         images, labels = batch 
