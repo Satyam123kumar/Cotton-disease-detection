@@ -41,6 +41,17 @@ def aman():
 def subtract():
     return 10-2
 
+def life():
+    problem = 10000000000
+    days = 365
+    return problem/days
+
+def snake():
+    rishav = 1
+    satyam = 1
+    mansi = 1
+    return 3
+
 class ImageClassificationBase(nn.Module):
     def training_step(self, batch):
         images, labels = batch 
